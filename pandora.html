@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Pomodoro — Focus & Stats</title>
+<link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="brand">
+      <!-- Book + timer icon -->
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M6 4a3 3 0 0 0-3 3v11.5A1.5 1.5 0 0 0 4.5 20H19a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H6Zm0 2h12v11H6.5a.5.5 0 0 1-.5-.5V6Z"/></svg>
+      <span>Study Pomodoro</span>
+    </div>
+    <div class="nav-actions">
+      <button id="exportBtn" class="btn">Export Stats</button>
+      <button id="themeToggle" class="btn icon-btn" aria-label="Toggle Theme">
+        <!-- Sun/Moon SVG -->
+        <svg id="themeIcon" viewBox="0 0 24 24" class="icon" aria-hidden="true">
+          <path d="M12 4.5a1 1 0 0 1 1 1V7a1 1 0 1 1-2 0V5.5a1 1 0 0 1 1-1Zm6.364 2.136a1 1 0 0 1 0 1.415l-1.06 1.06a1 1 0 0 1-1.415-1.414l1.06-1.06a1 1 0 0 1 1.415 0ZM18.5 13a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0ZM4.5 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2h1.5Zm17 0a1 1 0 1 1 0 2H20a1 1 0 1 1 0-2h1.5ZM6.343 16.485a1 1 0 0 1 1.414 0l1.061 1.06a1 1 0 0 1-1.415 1.415l-1.06-1.06a1 1 0 0 1 0-1.415Z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <!-- LEFT: Timer & Settings -->
+      <section class="timer-panel">
+        <div class="card card-strong" style="display:grid; gap:20px">
+          <h2>Timer</h2>
+          <div class="modes">
+            <button class="mode-chip chip-work active" data-mode="work">Work</button>
+            <button class="mode-chip chip-short" data-mode="short">Short Break</button>
+            <button class="mode-chip chip-long" data-mode="long">Long Break</button>
+          </div>
+
+          <div class="timer-display">
+            <div class="big-time" id="time">25:00</div>
+            <div class="subtext">
+              <span id="phaseText">Focus session</span> •
+              <span id="cycleText">Cycle <b id="cycleCount">1</b></span>
+            </div>
+          </div>
+
+          <div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+          <div class="controls">
+            <button id="startPause" class="btn btn-primary">Start</button>
+            <button id="reset" class="btn">Reset</button>
+            <button id="skip" class="btn">Skip ↦</button>
+            <button id="clearHistory" class="btn danger">Clear History</button>
+          </div>
+          <div class="muted">Shortcuts: <b>Space</b> Start/Pause • <b>R</b> Reset • <b>N</b> Next • <b>T</b> Theme</div>
+        </div>
+
+        <div class="card settings">
+          <h2>Settings</h2>
+          <form id="settingsForm">
+            <div>
+              <label>Work (minutes)</label>
+              <input type="number" id="workMins" min="1" max="120" value="25">
+            </div>
+            <div>
+              <label>Short Break (minutes)</label>
+              <input type="number" id="shortMins" min="1" max="60" value="5">
+            </div>
+            <div>
+              <label>Long Break (minutes)</label>
+              <input type="number" id="longMins" min="1" max="90" value="15">
+            </div>
+            <div>
+              <label>Sessions before Long Break</label>
+              <input type="number" id="sessionsBeforeLong" min="2" max="12" value="4">
+            </div>
+            <div class="option-row full">
+              <input type="checkbox" id="autoStartBreaks" checked>
+              <label for="autoStartBreaks">Auto-start breaks</label>
+            </div>
+            <div class="option-row full">
+              <input type="checkbox" id="autoStartWork">
+              <label for="autoStartWork">Auto-start next work session</label>
+            </div>
+            <div class="option-row full">
+              <input type="checkbox" id="soundOn" checked>
+              <label for="soundOn">Sound when session ends</label>
+            </div>
+            <div class="option-row full">
+              <input type="checkbox" id="notifyOn">
+              <label for="notifyOn">Desktop notification</label>
+            </div>
+
+            <div class="full" style="display:flex; gap:10px;">
+              <button class="btn btn-primary" type="submit">Save Settings</button>
+              <button class="btn" id="restoreDefaults" type="button">Restore Defaults</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- RIGHT: Stats & History -->
+      <section class="stats">
+        <div class="kpis">
+          <div class="kpi">
+            <h3>Today's Focus</h3>
+            <p id="todayFocus">0m</p>
+          </div>
+          <div class="kpi">
+            <h3>Sessions Completed</h3>
+            <p id="sessionsCompleted">0</p>
+          </div>
+          <div class="kpi">
+            <h3>Streak (days)</h3>
+            <p id="streakDays">0</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Focus Trend</h2>
+          <canvas id="trendChart" height="160"></canvas>
+        </div>
+
+        <div class="card history">
+          <h2>History</h2>
+          <ul id="historyList"></ul>
+          <div class="muted" id="noHistoryNote">No sessions yet — start your first focus!</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    Built for deep work • Local storage powered • Study-themed glass UI
+  </footer>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
