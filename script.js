@@ -150,6 +150,52 @@ let running = false;
 let tickHandle = null;
 let cycleCount = 1;
 updateTimerUI();
+
+
+
+// ==============================
+// Navbar toggle
+// ==============================
+const toggleBtn = document.getElementById('sidebarToggle');
+const navbar = document.querySelector('.navbar');
+
+// Function to update toggle button visibility
+function updateToggle() {
+  if (window.innerWidth < 1500 && !navbar.classList.contains('show')) {
+    toggleBtn.classList.add('active'); // show toggle
+  } else {
+    toggleBtn.classList.remove('active'); // hide toggle
+  }
+}
+
+// Show sidebar
+toggleBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  navbar.classList.add('show');
+  toggleBtn.classList.remove('active'); // hide toggle while sidebar is open
+});
+
+// Click outside sidebar to close it
+document.addEventListener('click', (e) => {
+  if (navbar.classList.contains('show') && !navbar.contains(e.target) && e.target !== toggleBtn) {
+    navbar.classList.remove('show');
+    updateToggle(); // restore toggle button
+  }
+});
+
+// Show/hide toggle button on resize
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 1500) {
+    navbar.classList.remove('show');
+    toggleBtn.classList.remove('active');
+  } else {
+    updateToggle();
+  }
+});
+
+// Initial state
+updateToggle();
+
 // ==============================
 // Charts
 // ==============================
@@ -172,7 +218,7 @@ if (trendCtx) {
         data: [],
         borderColor: getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#4f46e5',
         backgroundColor: 'transparent',
-        fill: false,
+        fill: true,
         tension: 0.3
       }]
     },

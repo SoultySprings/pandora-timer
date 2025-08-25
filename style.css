@@ -1,7 +1,7 @@
 /* ========= DEFAULT THEME (Orange + Pink) ========= */
 /* ========= DEFAULT LIGHT ========= */
 :root {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #fff1eb 0%, #ffdada 40%, #ffdee9 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #fff1eb 0%, #d29595 40%, #ffdee9 100%);
   --text: #3c2a2a;
   --muted: #6b4e4e;
   --heading: #2d1f1f;
@@ -56,15 +56,15 @@
 /* ========= OCEAN BLUE ========= */
 .palette-blue[data-theme="light"],
 :root.palette-blue {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
   --accent: #1e88e5;
   --accent-2: #64b5f6;
   --card: rgba(227,242,253,0.65);
-  --card-strong: rgba(187,222,251,0.1);
+  --card-strong: rgba(187,222,251,0.9);
   --border: #90caf9;
   --text: #0d47a1;
   --heading: #1565c0;
-  --muted: #546e7a;
+  --muted: #242f34;
 }
 .palette-blue[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #0d1b2a 0%, #1b263b 60%, #0f172a 100%);
@@ -81,11 +81,11 @@
 /* ========= FOREST GREEN ========= */
 .palette-green[data-theme="light"],
 :root.palette-green {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #e8f5e9 0%, #c8e6c9 50%, #a5d6a7 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #e8f5e9 0%, #c8e6c9 50%, #a5d6a7 100%);
   --accent: #43a047;
   --accent-2: #81c784;
   --card: rgba(232,245,233,0.65);
-  --card-strong: rgba(200,230,201,0.1);
+  --card-strong: rgba(200,230,201,0.9);
   --border: #a5d6a7;
   --text: #1b5e20;
   --heading: #2e7d32;
@@ -106,15 +106,15 @@
 /* ========= ROYAL PURPLE ========= */
 .palette-purple[data-theme="light"],
 :root.palette-purple {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #f3e5f5 0%, #e1bee7 50%, #ce93d8 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #f3e5f5 0%, #e1bee7 50%, #ce93d8 100%);
   --accent: #8e24aa;
   --accent-2: #ba68c8;
   --card: rgba(243,229,245,0.65);
-  --card-strong: rgba(225,190,231,0.1);
+  --card-strong: rgba(225,190,231,0.9);
   --border: #ce93d8;
   --text: #4a148c;
   --heading: #6a1b9a;
-  --muted: #5e548e;
+  --muted: #2c2843;
 }
 .palette-purple[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #1a102a 0%, #2c1a47 60%, #140824 100%);
@@ -130,15 +130,15 @@
 
 /* Palette 4: Teal */
 :root.palette-teal {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #e0f2f1 0%, #80cbc4 50%, #4db6ac 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #e0f2f1 0%, #80cbc4 50%, #4db6ac 100%);
   --accent: #00796b;
   --accent-2: #26a69a;
   --card: rgba(224,242,241,0.65);
-  --card-strong: rgba(128,203,196,0.1);
+  --card-strong: rgba(128,203,196,0.9);
   --border: #4db6ac;
   --text: #004d40;
   --heading: #00695c;
-  --muted: #009688;
+  --muted: #003a34;
 }
 .palette-teal[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #0d2625 0%, #1b3e3d 60%, #041211 100%);
@@ -154,15 +154,15 @@
 
 /* Palette 5: Pink */
 :root.palette-pink {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #fce4ec 0%, #f48fb1 50%, #f06292 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #fce4ec 0%, #f48fb1 50%, #f06292 100%);
   --accent: #c2185b;
   --accent-2: #f06292;
   --card: rgba(252,228,236,0.65);
-  --card-strong: rgba(244,143,177,0.1);
+  --card-strong: rgba(244,143,177,0.9);
   --border: #f06292;
   --text: #880e4f;
   --heading: #ad1457;
-  --muted: #e91e63;
+  --muted: #360716;
 }
 .palette-pink[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #2c0d17 0%, #5c1a2c 60%, #14050b 100%);
@@ -177,15 +177,15 @@
 }
 /* Palette 6: Sunset */
 :root.palette-sunset {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #fff3e0 0%, #ff8a65 50%, #ff5722 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #fff3e0 0%, #ff8a65 50%, #ff8a67 100%);
   --accent: #d84315;
   --accent-2: #ff7043;
   --card: rgba(255,243,224,0.65);
-  --card-strong: rgba(255,138,101,0.1);
+  --card-strong: rgba(255,138,101,0.9);
   --border: #ff5722;
   --text: #bf360c;
   --heading: #e64a19;
-  --muted: #ff7043;
+  --muted: #531604;
 }
 .palette-sunset[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #330b00 0%, #5d1a0f 60%, #1a0400 100%);
@@ -201,15 +201,15 @@
 
 /* Palette 7: Neon */
 :root.palette-neon {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #e0f7fa 0%, #00e5ff 50%, #00b0ff 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #e0f7fa 0%, #00e5ff 50%, #00b0ff 100%);
   --accent: #00acc1;
   --accent-2: #00b0ff;
   --card: rgba(224,247,250,0.65);
-  --card-strong: rgba(0,229,255,0.1);
+  --card-strong: rgba(0,229,255,0.9);
   --border: #00b0ff;
   --text: #006064;
   --heading: #00838f;
-  --muted: #0097a7;
+  --muted: #00464e;
 }
 .palette-neon[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #001a1f 0%, #004d5e 60%, #000a0f 100%);
@@ -225,15 +225,15 @@
 
 /* Palette 8: Cyberpunk */
 :root.palette-cyberpunk {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #f3e5f5 0%, #ff4081 50%, #7c4dff 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #f3e5f5 0%, #ff4081 50%, #7c4dff 100%);
   --accent: #d500f9;
   --accent-2: #ff4081;
   --card: rgba(243,229,245,0.65);
-  --card-strong: rgba(255,64,129,0.1);
+  --card-strong: rgba(255,64,129,0.9);
   --border: #7c4dff;
   --text: #4a148c;
   --heading: #6a1b9a;
-  --muted: #ab47bc;
+  --muted: #461b4e;
 }
 .palette-cyberpunk[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #1a0d1a 0%, #43003d 60%, #0c0014 100%);
@@ -249,15 +249,15 @@
 
 /* Palette 9: Earthy */
 :root.palette-earthy {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #f1f8e9 0%, #aed581 50%, #7cb342 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #f1f8e9 0%, #aed581 50%, #7cb342 100%);
   --accent: #558b2f;
   --accent-2: #8bc34a;
   --card: rgba(241,248,233,0.65);
-  --card-strong: rgba(174,213,129,0.1);
+  --card-strong: rgba(174,213,129,0.9);
   --border: #7cb342;
   --text: #33691e;
   --heading: #558b2f;
-  --muted: #689f38;
+  --muted: #293e16;
 }
 .palette-earthy[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #1b220f 0%, #334d1a 60%, #0c1005 100%);
@@ -273,15 +273,15 @@
 
 /* Palette 10: Icy */
 :root.palette-icy {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #e0f7fa 0%, #81d4fa 50%, #29b6f6 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #e0f7fa 0%, #81d4fa 50%, #29b6f6 100%);
   --accent: #0288d1;
   --accent-2: #4fc3f7;
   --card: rgba(224,247,250,0.65);
-  --card-strong: rgba(129,212,250,0.1);
+  --card-strong: rgba(129,212,250,0.9);
   --border: #29b6f6;
   --text: #026cbe;
   --heading: #0277bd;
-  --muted: #03a9f4;
+  --muted: #02354c;
 }
 .palette-icy[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #0a1b24 0%, #10374d 60%, #010a14 100%);
@@ -291,19 +291,20 @@
   --card-strong: rgba(16,55,77,0.9);
   --border: #29b6f6;
   --text: #cde3f6;
+  --muted: #93cde8;
 }
 
 /* Palette 11: Coral */
 :root.palette-coral {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #fff0f0 0%, #ff8f87 50%, #ff5f4d 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #fff0f0 0%, #ff8f87 50%, #ff5f4d 100%);
   --accent: #e53935;
   --accent-2: #ff7043;
   --card: rgba(255,240,240,0.65);
-  --card-strong: rgba(255,143,135,0.1);
+  --card-strong: rgba(255,143,135,0.9);
   --border: #ff5f4d;
   --text: #b71c1c;
   --heading: #d32f2f;
-  --muted: #ef5350;
+  --muted: #531c1b;
 }
 .palette-coral[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #330b0b 0%, #5d1a1a 60%, #1a0404 100%);
@@ -319,15 +320,15 @@
 
 /* Palette 12: Lavender Mist */
 :root.palette-lavender {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #f5f0ff 0%, #b39ddb 50%, #7e57c2 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #f5f0ff 0%, #b39ddb 50%, #7e57c2 100%);
   --accent: #6a1b9a;
   --accent-2: #9575cd;
   --card: rgba(245,240,255,0.65);
-  --card-strong: rgba(179,157,219,0.1);
+  --card-strong: rgba(179,157,219,0.9);
   --border: #7e57c2;
   --text: #4a148c;
   --heading: #6a1b9a;
-  --muted: #7e57c2;
+  --muted: #33234f;
 }
 .palette-lavender[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #1a0f26 0%, #331a4d 60%, #0c0614 100%);
@@ -343,15 +344,15 @@
 
 /* Palette 13: Mint */
 :root.palette-mint {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #e0fff4 0%, #80cbc4 50%, #26a69a 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #e0fff4 0%, #80cbc4 50%, #26a69a 100%);
   --accent: #00796b;
   --accent-2: #26a69a;
   --card: rgba(224,255,244,0.65);
-  --card-strong: rgba(128,203,196,0.1);
+  --card-strong: rgba(128,203,196,0.9);
   --border: #26a69a;
   --text: #004d40;
   --heading: #00796b;
-  --muted: #009688;
+  --muted: #00443d;
 }
 .palette-mint[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #0a1a19 0%, #1a3b38 60%, #010a09 100%);
@@ -367,15 +368,15 @@
 
 /* Palette 14: Amber Glow */
 :root.palette-amber {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #fff8e1 0%, #ffd54f 50%, #ffb300 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #fff8e1 0%, #ffd54f 50%, #ffb300 100%);
   --accent: #ff6f00;
   --accent-2: #ffc107;
   --card: rgba(255,248,225,0.65);
-  --card-strong: rgba(255,213,79,0.1);
+  --card-strong: rgba(255,213,79,0.9);
   --border: #ffb300;
   --text: #e65100;
   --heading: #ff6f00;
-  --muted: #ffa000;
+  --muted: #412901;
 }
 .palette-amber[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #332200 0%, #665500 60%, #1a0c00 100%);
@@ -391,15 +392,15 @@
 
 /* Palette 15: Ocean Breeze */
 :root.palette-ocean {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #e0f7fa 0%, #4dd0e1 50%, #00acc1 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #e0f7fa 0%, #4dd0e1 50%, #00acc1 100%);
   --accent: #007c91;
   --accent-2: #00acc1;
   --card: rgba(224,247,250,0.65);
-  --card-strong: rgba(77,208,225,0.1);
+  --card-strong: rgba(77,208,225,0.9);
   --border: #00acc1;
   --text: #004d56;
   --heading: #007c91;
-  --muted: #0097a7;
+  --muted: #01434a;
 }
 .palette-ocean[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #0a1a1d 0%, #10334d 60%, #010a0f 100%);
@@ -414,15 +415,15 @@
 }
 /* Palette 16: Sunrise */
 :root.palette-sunrise {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #fff8e1 0%, #ffab91 50%, #ff6f00 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #fff8e1 0%, #ffab91 50%, #ff6f00 100%);
   --accent: #e65100;
   --accent-2: #ff7043;
   --card: rgba(255,248,225,0.65);
-  --card-strong: rgba(255,171,145,0.1);
+  --card-strong: rgba(255,171,145,0.9);
   --border: #ff6f00;
   --text: #bf360c;
   --heading: #e64a19;
-  --muted: #ff8a65;
+  --muted: #502a1f;
 }
 .palette-sunrise[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #331a00 0%, #5d2a14 60%, #1a0400 100%);
@@ -438,15 +439,15 @@
 
 /* Palette 17: Forest Mist */
 :root.palette-forest {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #e8f5e9 0%, #81c784 50%, #388e3c 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #e8f5e9 0%, #81c784 50%, #388e3c 100%);
   --accent: #2e7d32;
   --accent-2: #66bb6a;
   --card: rgba(232,245,233,0.65);
-  --card-strong: rgba(129,199,132,0.1);
+  --card-strong: rgba(129,199,132,0.9);
   --border: #388e3c;
   --text: #1b5e20;
   --heading: #2e7d32;
-  --muted: #43a047;
+  --muted: #193a1a;
 }
 .palette-forest[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #10210f 0%, #1b3b1a 60%, #0a1005 100%);
@@ -462,15 +463,15 @@
 
 /* Palette 18: Midnight Blue */
 :root.palette-midnight {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #e3f2fd 0%, #64b5f6 50%, #1976d2 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #e3f2fd 0%, #64b5f6 50%, #1976d2 100%);
   --accent: #0d47a1;
   --accent-2: #42a5f5;
   --card: rgba(227,242,253,0.65);
-  --card-strong: rgba(100,181,246,0.1);
+  --card-strong: rgba(100,181,246,0.9);
   --border: #1976d2;
   --text: #0d47a1;
   --heading: #1565c0;
-  --muted: #5c6bc0;
+  --muted: #181c32;
 }
 .palette-midnight[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #0d1333 0%, #1a237e 60%, #08102a 100%);
@@ -486,15 +487,15 @@
 
 /* Palette 19: Rosewood */
 :root.palette-rosewood {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #fff0f5 0%, #f48fb1 50%, #c2185b 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #fff0f5 0%, #f48fb1 50%, #c2185b 100%);
   --accent: #880e4f;
   --accent-2: #f06292;
   --card: rgba(255,240,245,0.65);
-  --card-strong: rgba(244,143,177,0.1);
+  --card-strong: rgba(244,143,177,0.9);
   --border: #c2185b;
   --text: #4a148c;
   --heading: #6a1b9a;
-  --muted: #ab47bc;
+  --muted: #37163c;
 }
 .palette-rosewood[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #2c0d17 0%, #5c1a2c 60%, #14050b 100%);
@@ -510,15 +511,15 @@
 
 /* Palette 20: Glacier */
 :root.palette-glacier {
-  --bg: linear-gradient(1000px 700px at 50% -10%, #e0f7fa 0%, #4dd0e1 50%, #0097a7 100%);
+  --bg: radial-gradient(1000px 700px at 50% -10%, #e0f7fa 0%, #4dd0e1 50%, #0097a7 100%);
   --accent: #006064;
   --accent-2: #00acc1;
   --card: rgba(224,247,250,0.65);
-  --card-strong: rgba(77,208,225,0.1);
+  --card-strong: rgba(77,208,225,0.9);
   --border: #0097a7;
   --text: #004d56;
   --heading: #006064;
-  --muted: #00838f;
+  --muted: #012e32;
 }
 .palette-glacier[data-theme="dark"] {
   --bg: radial-gradient(1000px 700px at 50% -10%, #0a1b1d 0%, #10334d 60%, #010a0f 100%);
@@ -555,7 +556,7 @@
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: "Handlee", cursive;
+      font-family: "Funnel Display", sans-serif;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -573,44 +574,144 @@
     /* ===============================
        NAVBAR
        =============================== */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 20px;
-      position: sticky; top: 0; z-index: 50;
-      background: var(--nav-bg);
-      border-bottom: 1px solid var(--nav-border);
-      backdrop-filter: var(--glass);
-      -webkit-backdrop-filter: var(--glass);
-      box-shadow: var(--shadow);
-    }
-    .brand {
-      display: flex; gap: 10px; align-items: center;
-      font-weight: 800; color: var(--heading);
-    }
-    .brand svg { width: 24px; height: 24px; }
-    .nav-actions { display: flex; gap: 10px; align-items: center; }
+    /* Base Vertical Sidebar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: calc(100% - 250px); /* take full width minus navbar */
+  max-width: 200px;           /* optional max-width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background: var(--nav-bg);
+  border-right: 1px solid var(--nav-border);
+  backdrop-filter: var(--glass);
+  -webkit-backdrop-filter: var(--glass);
+  box-shadow: var(--shadow);
+  z-index: 50;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
 
-    .btn {
-      font-family: "Handlee", cursive;
-      font-weight: 600;
-    font-size: 0.95rem;
-      border: 1px solid var(--border);
-      background: var(--card);
-      color: var(--text);
-      padding: 8px 12px;
-      border-radius: 10px;
-      cursor: pointer;
-      backdrop-filter: var(--glass);
-      -webkit-backdrop-filter: var(--glass);
-      transition: transform .08s ease;
-    }
-    .btn:active { transform: scale(0.98); }
-    .icon-btn {
-      display: inline-flex; align-items: center; justify-content: center;
-    }
-    .icon { width: 22px; height: 22px; fill: currentColor; }
+/* Brand stacked vertically */
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  color: var(--heading);
+  margin-bottom: 2rem;
+}
+
+.brand svg {
+  width: 40px;
+  height: 40px;
+}
+
+/* Navigation actions stacked vertically */
+.nav-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+/* Buttons */
+.btn {
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  backdrop-filter: var(--glass);
+  -webkit-backdrop-filter: var(--glass);
+  transition: transform .08s ease;
+}
+.btn:active { transform: scale(0.98); }
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+/* Adjust main content to avoid sidebar overlap */
+main, .content {
+  margin-left: 250px;
+  padding: 1rem;
+  transition: margin-left 0.3s ease;
+}
+
+/* ----------------- */
+/* Responsive for small/medium screens */
+@media (max-width: 1500px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;             /* wider on smaller screens */
+    transform: translateX(-100%); /* slide off-screen */
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+
+  .navbar.show {
+    transform: translateX(0); /* slide back in */
+    overflow: visible;
+  }
+
+  main, .content {
+    margin-left: 0; /* main fills screen */
+  }
+}
+
+/* ----------------- */
+/* Burger toggle button */
+#sidebarToggle {
+  display: none; /* hidden by default (>=1300px) */
+}
+
+/* Show toggle only below 1300px, with animation */
+@media (max-width: 1500px) {
+  #sidebarToggle {
+    display: block;
+    opacity: 0;                   /* hidden until active */
+    transform: translateY(-20px); /* slide up */
+    pointer-events: none;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 1001;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  #sidebarToggle.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+
     /* =========================
    NICE PALETTE SELECT STYLES
    ========================= */
@@ -681,7 +782,23 @@
     /* ===============================
        LAYOUT
        =============================== */
-    .container { width: 100%; max-width: 1100px; margin: 20px auto; padding: 0 20px; }
+   .container {
+  width: 100%;
+  max-width: 800px;           /* max width stays fixed */
+  position: relative;
+  left: 200px;           /* optional inner padding */
+}
+
+/* Optional: adjust for smaller screens */
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+  max-width: 600px;           /* max width stays fixed */
+  left: 0px; 
+  }
+}
+
+
 
     .grid {
       display: grid;
