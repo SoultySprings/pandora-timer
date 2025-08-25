@@ -20,7 +20,7 @@ Check it out here: [TimeZenith Live](https://rmn-dora.vercel.app/)
 - 🔄 Switch between Work, Short Break, and Long Break modes  
 - ⚙️ Customize session durations, auto-start options, and notifications  
 - 📊 Track daily focus time, session history, and streaks  
-- 🎨 Toggle light/dark themes and choose from multiple color palettes  
+- 🎨 Toggle light/dark themes and choose from **20+ color palettes**  
 
 **Why you’ll love the live demo:**
 - Instantly use the app from any device with a browser 🌐  
@@ -53,11 +53,19 @@ We’re planning a **backend integration**! This means:
   - Sessions completed ✅  
   - Streak counter 🔥  
   - Focus trend chart (powered by Chart.js)  
+  - Task distribution & session overview  
   - Session history with export functionality  
 
 - 🎨 **Themes & Personalization**  
   - Light/Dark mode toggle 🌞🌙  
-  - Multiple color palettes: Ocean Blue 🌊, Forest Green 🌲, Royal Purple 👑, Citrus Yellow 🍋, Aqua Teal 💧, Strawberry Pink 🍓, Mocha Brown ☕  
+  - Over **20 curated palettes**, including:  
+    - Ocean Breeze 🌊  
+    - Forest Mist 🌲  
+    - Cyberpunk 💜💙  
+    - Coral 🪸  
+    - Rosewood 🌹  
+    - Glacier ❄️  
+    - And more!  
 
 - ⌨️ **Keyboard Shortcuts**  
   - `Space` → Start/Pause  
@@ -74,7 +82,7 @@ We’re planning a **backend integration**! This means:
 
 - **Frontend:** HTML, CSS, JavaScript  
 - **Charts:** [Chart.js](https://www.chartjs.org/) 📊  
-- **Fonts:** [Google Fonts - Handlee](https://fonts.google.com/specimen/Handlee) ✍️  
+- **Fonts:** [Google Fonts - DM Sans](https://fonts.google.com/specimen/DM+Sans), [Funnel Display](https://fonts.google.com/specimen/Funnel+Display), [Just Another Hand](https://fonts.google.com/specimen/Just+Another+Hand)  
 - **Storage:** Browser LocalStorage 💾  
 
 ---
@@ -83,7 +91,7 @@ We’re planning a **backend integration**! This means:
 
 <!-- Replace with actual screenshots -->
 - Timer Panel ⏱️  
-- Stats & History 📊  
+- Stats & Charts 📊  
 - Settings Panel ⚙️  
 
 ---
@@ -101,4 +109,6 @@ Help us make TimeZenith the **best productivity companion**! 💪
 
 ## 📜 License
 
-MIT License © 2025 SoultySprings
+MIT License © 2025 [SoultySprings](https://github.com/SoultySprings)  
+
+Built for deep work • Local storage powered • Study-themed UI
