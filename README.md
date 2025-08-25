@@ -101,4 +101,4 @@ Help us make TimeZenith the **best productivity companion**! 💪
 
 ## 📜 License
 
-MIT License © 2025 [Your Name]
+MIT License © 2025 SoultySprings
