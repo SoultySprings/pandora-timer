@@ -400,8 +400,10 @@ function updateStreak() {
 }
 
 // ==============================
-// Timer Logic
+// Timer Logic (Fixed for inactive tabs)
 // ==============================
+let endTime = null; // Track session end time
+
 function setMode(m) {
   mode = m;
   modeChips.forEach(c => c.classList.toggle('active', c.dataset.mode === m));
@@ -416,14 +418,25 @@ function start() {
   if (running) return;
   running = true;
   startPauseBtn.textContent = 'Pause';
-  tickHandle = setInterval(tick, 1000);
+
+  // Calculate endTime based on current remaining
+  endTime = Date.now() + remaining * 1000;
+
+  tick(); // Immediately update UI
+  tickHandle = setInterval(tick, 500); // faster interval for better accuracy
 }
+
 function pause() {
+  if (!running) return;
   running = false;
   startPauseBtn.textContent = 'Start';
   clearInterval(tickHandle);
   tickHandle = null;
+
+  // Update remaining based on actual elapsed time
+  remaining = Math.max(0, Math.round((endTime - Date.now()) / 1000));
 }
+
 function resetTimer() {
   pause();
   remaining = totalSeconds;
@@ -431,12 +444,13 @@ function resetTimer() {
 }
 
 function tick() {
+  // Compute remaining from actual time
+  remaining = Math.max(0, Math.round((endTime - Date.now()) / 1000));
+  updateTimerUI();
+
   if (remaining <= 0) {
     completeSession();
-    return;
   }
-  remaining -= 1;
-  updateTimerUI();
 }
 
 function completeSession() {
@@ -477,6 +491,7 @@ function updateTimerUI() {
   progressEl.style.width = `${100 * (1 - remaining / totalSeconds)}%`;
   cycleCountEl.textContent = cycleCount;
 }
+
 
 // ==============================
 // Sound & Notifications
